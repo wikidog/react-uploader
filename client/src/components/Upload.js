@@ -35,6 +35,16 @@ const uploader = new FineUploaderTraditional({
       onValidate: () => console.log('aaaaaaaaa == onValidate ======'),
       onValidateBatch: () => console.log('aaaaaaaaa == onValidateBatch ======'),
       onError: () => console.log('bbbbbbbbb == onError ======'),
+      onStatusChange: (id, oldStatus, newStatus) => {
+        console.log('id:', id);
+        console.log('oldStatus:', oldStatus);
+        console.log('newStatus:', newStatus);
+      },
+      onSubmit: (id, name) => {
+        console.log('=============== onSubmit ===================');
+        console.log('id:', id);
+        console.log('name:', name);
+      },
     },
   },
 });
