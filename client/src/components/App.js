@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import UploadComponent from './Upload';
+// import FileListener from './Upload2';
 
 class App extends Component {
   render() {
@@ -9,6 +10,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Welcome to React</h1>
         </header>
+
         <div>
           <UploadComponent />
         </div>

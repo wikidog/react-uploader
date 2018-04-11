@@ -31,6 +31,11 @@ const uploader = new FineUploaderTraditional({
     retry: {
       enableAuto: false,
     },
+    callbacks: {
+      onValidate: () => console.log('aaaaaaaaa == onValidate ======'),
+      onValidateBatch: () => console.log('aaaaaaaaa == onValidateBatch ======'),
+      onError: () => console.log('bbbbbbbbb == onError ======'),
+    },
   },
 });
 
