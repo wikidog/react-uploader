@@ -34,15 +34,16 @@ const uploader = new FineUploaderTraditional({
   },
 });
 
-const fileInputChildren = <span>Select a file</span>;
-const dropzoneContent = (
-  <span className="react-fine-uploader-gallery-dropzone-content">
-    Drop a file here
-  </span>
-);
-
 class UploadComponent extends Component {
   render() {
+    const fileInputChildren = <span>Select a file</span>;
+
+    const dropzoneContent = (
+      <span className="react-fine-uploader-gallery-dropzone-content">
+        Drop a file here
+      </span>
+    );
+
     return (
       <Gallery
         fileInput-children={fileInputChildren}
