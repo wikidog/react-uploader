@@ -1,0 +1,26 @@
+{
+  "name": "tt",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": {
+    "/uploads": {
+      "target": "http://localhost:5000"
+    }
+  },
+  "dependencies": {
+    "fine-uploader": "^5.16.0",
+    "material-ui": "^1.0.0-beta.38",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-fine-uploader": "^1.0.9",
+    "react-scripts": "1.1.1",
+    "react-transition-group": "^1.2.1",
+    "typeface-roboto": "0.0.54"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
