@@ -13,7 +13,7 @@ const uploader = new FineUploaderTraditional({
     autoUpload: false,
     multiple: false,
     validation: {
-      itemLimit: 1,
+      // itemLimit: 1,
     },
     messages: {
       tooManyItemsError: 'one file a time',
@@ -51,6 +51,8 @@ const uploader = new FineUploaderTraditional({
 
 class UploadComponent extends Component {
   render() {
+    console.log('uploader:', uploader);
+
     const fileInputChildren = <span>Select a file</span>;
 
     const dropzoneContent = (
